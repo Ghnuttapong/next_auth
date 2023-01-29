@@ -88,11 +88,6 @@ export default function LoginForm() {
                       <Text>Sign in with Google</Text>
                     </Center>
                   </Button>
-                  <Button colorScheme={"facebook"} leftIcon={<FaFacebook />}>
-                    <Center>
-                      <Text>Continue with Facebook</Text>
-                    </Center>
-                  </Button>
                 </Stack>
               </Stack>
             </Stack>

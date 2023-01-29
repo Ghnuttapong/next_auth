@@ -17,7 +17,7 @@ import {
   useColorModeValue,
   VStack,
 } from '@chakra-ui/react';
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { BsGithub, BsLinkedin, BsPerson, BsTwitter } from 'react-icons/bs';
 import { MdEmail, MdOutlineEmail } from 'react-icons/md';
 
@@ -144,7 +144,7 @@ export default function GetintouchComponent() {
                     <FormLabel>Name</FormLabel>
 
                     <InputGroup>
-                      <InputLeftElement children={<BsPerson />} />
+                      <InputLeftElement><BsPerson /></InputLeftElement>
                       <Input type="text" name="name" placeholder="Your Name" />
                     </InputGroup>
                   </FormControl>
@@ -153,7 +153,7 @@ export default function GetintouchComponent() {
                     <FormLabel>Email</FormLabel>
 
                     <InputGroup>
-                      <InputLeftElement children={<MdOutlineEmail />} />
+                      <InputLeftElement><MdOutlineEmail /></InputLeftElement>
                       <Input
                         type="email"
                         name="email"
